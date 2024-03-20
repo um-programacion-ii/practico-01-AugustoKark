@@ -9,6 +9,7 @@ public Ingrediente(String nombre, int cantidad) {
     public Ingrediente() {
     }
 
+
     @Override
     public String toString() {
         return "Ingrediente{" + "nombre=" + nombre + ", cantidad=" + cantidad + '}';
@@ -31,11 +32,12 @@ public Ingrediente(String nombre, int cantidad) {
     }
 
     public void sacarIngrediente(int cantidad){
-    if (this.cantidad > cantidad){
+    if (this.cantidad >= cantidad){
         this.cantidad -= cantidad;
     }else{
         System.out.println("No hay suficiente ingrediente");
         System.out.println("Faltan " + (cantidad - this.cantidad) + " unidades de " + this.nombre);
     }
     }
+
 }

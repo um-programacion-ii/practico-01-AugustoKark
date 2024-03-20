@@ -20,7 +20,17 @@ public class Receta {
     }
 
 
+    public Ingrediente[] getIngredientes() {
+        return ingredientes;
+    }
 
-
-
+//    public void setIngredientes(Ingrediente[] ingredientes) {
+//        this.ingredientes = ingredientes;
+//    }
 }
+
+
+
+
+
+
